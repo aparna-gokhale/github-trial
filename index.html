@@ -13,30 +13,32 @@
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 100%;
     overflow: hidden;
-    background-color: #000;
+    background-color: #000; /* Optional for dark background */
   }
 
-  body, div, iframe {
-    margin: 0 !important;
-    padding: 0 !important;
-    border: none !important;
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  #story_container, #story_content, iframe {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw !important;
-    height: 100vh !important;
+  #story_container {
+    width: 100vw;
+    height: 100vh;
     max-width: 100vw;
     max-height: 100vh;
-    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    padding: 0;
   }
 
-  iframe {
-    display: block;
+  iframe, #story_content {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
   }
   </style>
 
